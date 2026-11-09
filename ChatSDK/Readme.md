@@ -1,4 +1,4 @@
-# TelloTalk Android Chat SDK
+# Tilism Android Chat SDK
 
 A ready-made customer chat for Android apps: your users chat with your agents (and chatbot) from
 inside your app, and get push notifications for new messages.
@@ -77,14 +77,14 @@ no longer supported. Upgrading from 3.x? See [Migrating from 3.x](#migrating-fro
 ### Option 2: Local AAR
 
 1. Download the 4.0.0 AAR (and its sources jar) from
-   [TelloTalk/AndroidSDKs](https://github.com/TelloTalk/AndroidSDKs/tree/main/ChatSDK) and copy
+   [TilismTechnologies/AndroidSDKs](https://github.com/TilismTechnologies/AndroidSDKs/tree/main/ChatSDK) and copy
    them into your app's `libs` folder.
 2. A local AAR does not bring its dependencies, so add them along with it in your app's
    `build.gradle`:
 
     ```gradle
     dependencies {
-        implementation files('libs/tellotalksdk.aar')
+        implementation files('libs/tilismsdk.aar')
 
         implementation 'androidx.core:core-ktx:1.17.0'
         implementation 'androidx.appcompat:appcompat:1.7.1'
@@ -121,7 +121,7 @@ no longer supported. Upgrading from 3.x? See [Migrating from 3.x](#migrating-fro
     }
     ```
 
-   `tellotalksdk/build.gradle` is the source of truth for this list; it also lists the Fresco
+   `tilismsdk/build.gradle` is the source of truth for this list; it also lists the Fresco
    native modules the SDK leaves out to stay small.
 
 ### R8 / ProGuard
